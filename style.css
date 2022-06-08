@@ -326,7 +326,7 @@ p {
 	width: 600px;
 	height: 320px;
 	border-radius: 50px;
-	padding: 2%;
+	padding: 3%;
 }
 #about .why-buy h2 {
 	color: black;
@@ -350,7 +350,7 @@ p {
 	margin-left: 50%;
 	margin-right: 5%;
 	border: 10px solid black;
-	padding: 2%;
+	padding: 3%;
 	border-radius: 50px;
 }
 #about .about-3 h2 {
@@ -361,6 +361,7 @@ p {
 	font-weight: bold;
 	font-size: 25px;
 	padding-bottom: 5px;
+	text-align: center;
 
 }
 @media only screen and (max-width: 680px) {
@@ -611,7 +612,7 @@ p {
 		width: 400px
 	}
 	.card {
-		width: 355px;
+		width: 340px;
 		padding: 1px 1px 1px 1px;
 		text-align: center;
 		font-size: 2rem;
