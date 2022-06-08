@@ -399,6 +399,7 @@ p {
 		font-size: 18px;
 		font-weight: bold;
 		justify-self: stretch;
+		line-height: 1.5px;
 	}
 }
 /* END OF ABOUT SECTION */
