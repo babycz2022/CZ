@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 * {
 	padding: 0;
 	margin: 0;
@@ -9,7 +10,7 @@ body {
 }
 html {
 	font-size: 10px;
-	font-family: monospace;
+	font-family: Montserrat;
 	scroll-behavior: smooth;
 }
 a {
@@ -27,7 +28,7 @@ img {
 	width: 100%;
 	object-fit: cover;
 }
-a,img,u {
+a,img {
 	cursor: url(cz.cur), auto !important;
 } 
 p {
@@ -281,7 +282,7 @@ p {
 	text-align: center;
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 100px 20px;
+	padding: 0 5% 0 0;
 }
 #about .col-left {
 	width: 250px;
@@ -290,9 +291,10 @@ p {
 #about .col-right {
 	width: 100%;
 }
-#about .col-right h2 {
-	font-size: 4rem;
-	font-weight: 500;
+#about .col-right h1 {
+	font-size: 70px;
+	font-weight: bold;
+	text-transform: capitalize;
 	letter-spacing: 0.2rem;
 	margin-bottom: 10px;
 }
@@ -300,12 +302,12 @@ p {
 	margin-bottom: 20px;
 	font-size: 2.3em;
 	line-height: 2em;
+	font-weight: bold;
 }
 #about .col-left .about-img {
 	height: 100%;
 	width: 100%;
 	position: relative;
-	border: 10px solid white;
 }
 #about .col-left .about-img::after {
 	content: '';
@@ -317,7 +319,87 @@ p {
 	border: 7px solid yellow;
 	z-index: -1;
 }
+#about .about-2 {
+	margin: 5%;
+	display: flex;
+	border: 10px solid black;
+	width: 600px;
+	height: 320px;
+	border-radius: 50px;
+	padding: 2%;
+}
+#about .why-buy h2 {
+	color: black;
+	font-size: 50px;
+	letter-spacing: 1px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+#about .why-buy p {
+	letter-spacing: 2px;
+	font-size: 25px;
+	padding-top: 5px;
+	font-weight: bold;
+	margin-bottom: 45px;
+	text-align: left;
+	line-height: 1px;
 
+}
+#about .about-3 {
+	display: flex;
+	margin-left: 50%;
+	margin-right: 5%;
+	border: 10px solid black;
+	padding: 2%;
+	border-radius: 50px;
+}
+#about .about-3 h2 {
+	font-size: 50px;
+}
+#about .about-3 p {
+	letter-spacing: 2px;
+	font-weight: bold;
+	font-size: 25px;
+	padding-bottom: 5px;
+
+}
+@media only screen and (max-width: 680px) {
+	#about .about-2 {
+		display: block;
+		width: fit-content;
+		height: auto;
+		border: 5px solid black;
+		padding: 5%;
+		font-weight: bold;
+	}
+	#about .why-buy h2 {
+		font-size: 25px;
+		text-align: center;
+	}
+	#about .why-buy p{
+		font-size: 15px;
+		font-weight: bold;
+	}
+	#about .about-3 {
+		display: block;
+		width: fit-content;
+		height: auto;
+		border: 5px solid black;
+		padding: 5%;
+		margin: 0;
+		font-weight: bold;
+	}
+	#about .about-3 h2 {
+		font-size: 25px;
+		text-align: center;
+		font-weight: bold;
+	}
+	#about .about-3 p {
+		font-size: 18px;
+		font-weight: bold;
+		justify-self: stretch;
+	}
+}
 /* END OF ABOUT SECTION */
 
 
@@ -418,12 +500,12 @@ p {
 }
 .row section .details .title {
 	font-size: 25px;
-	font-weight: 600;
+		font-weight: bold;
 }
 .row section p {
 	margin: 10px 0 17px 0;
-	line-height: 5px;
 	font-size: 15px;
+	font-weight: bold;
 }
 /* Media Query */
 @media(max-width: 790px) {
@@ -542,8 +624,7 @@ p {
 	border-radius: 20px;
 	background: whitesmoke;
 	margin-right:5px;
-	}	
-
+	}
 }
 /* END OF TOKENOMICS SECTION */
 
@@ -590,6 +671,7 @@ p {
 	color: #FFD369;
 	font-size: 35px;
 	margin-top: 35%;
+	font-weight: bold;
 }
 #team .team-member a {
 	color: #FFD369;
@@ -602,6 +684,7 @@ p {
 	font-size: 15px;
 	text-transform: uppercase;
 	margin: 12px;
+	font-weight: bold;
 }
 #team .team-member p {
 	color: yellow;
@@ -748,7 +831,7 @@ p {
 
 	/* About */
 	#about .about {
-		flex-direction: row-reverse;
+		flex-direction: row;
 	}
 	#about .col-left {
 		width: 600px;
@@ -803,5 +886,13 @@ p {
 #services .service-bottom .service-item {
 	flex-basis: 22%;
 	margin: 1.5%;
+	}
+}
+@media only screen and (max-width: 400px) {
+	#home h1{
+		font-size: 25px;
+	}
+	#about {
+		font-weight: bold;
 	}
 }
