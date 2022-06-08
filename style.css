@@ -361,7 +361,6 @@ p {
 	font-weight: bold;
 	font-size: 25px;
 	padding-bottom: 5px;
-	line-height: 1.5px;
 
 }
 @media only screen and (max-width: 680px) {
@@ -399,7 +398,6 @@ p {
 		font-size: 18px;
 		font-weight: bold;
 		justify-self: stretch;
-		line-height: 1.5px;
 	}
 }
 /* END OF ABOUT SECTION */
