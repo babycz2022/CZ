@@ -361,6 +361,7 @@ p {
 	font-weight: bold;
 	font-size: 25px;
 	padding-bottom: 5px;
+	line-height: 1px;
 
 }
 @media only screen and (max-width: 680px) {
