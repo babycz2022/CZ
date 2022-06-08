@@ -361,7 +361,7 @@ p {
 	font-weight: bold;
 	font-size: 25px;
 	padding-bottom: 5px;
-	line-height: 1px;
+	line-height: 1.5px;
 
 }
 @media only screen and (max-width: 680px) {
@@ -545,7 +545,7 @@ p {
 	background: linear-gradient(#393E46, #FFD369);
 }
 #tokenomics  h1 {
-	font-size: 60px;
+	font-size: 40px;
 	text-align: center;
 	padding-top: 10%;
 	padding-bottom: 5%; 
