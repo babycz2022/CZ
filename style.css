@@ -391,6 +391,7 @@ p {
 		padding: 5%;
 		margin: 2%;
 		font-weight: bold;
+		text-align: center;
 	}
 	#about .about-3 h2 {
 		font-size: 25px;
