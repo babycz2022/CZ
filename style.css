@@ -329,6 +329,7 @@ p {
 	height: 320px;
 	border-radius: 50px;
 	padding: 2%;
+	box-shadow: 10px 10px 25px black;
 }
 #about .why-buy h2 {
 	color: black;
@@ -355,6 +356,7 @@ p {
 	padding: 2%;
 	width: auto;
 	border-radius: 50px;
+	box-shadow: 10px 10px 25px black;
 }
 #about .about-3 h2 {
 	font-size: 50px;
