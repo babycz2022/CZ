@@ -163,7 +163,6 @@ p {
 	z-index: 100;
 	cursor: pointer;
 	transform: scale(0.8);
-	margin-right: 20px;
 }
 #header .hamburger:after {
 	position: absolute;
@@ -406,6 +405,18 @@ p {
 		justify-self: stretch;
 		text-align: center;
 	}
+	#about .about {
+		padding-top: 30px;
+	}
+	#about .col-right h1 {
+		margin-top: -50px;
+	}
+	#about .col-right p {
+		padding-left: 20px;
+	}	
+		
+
+
 }
 /* END OF ABOUT SECTION */
 
@@ -541,6 +552,9 @@ p {
 	.wrapper .row{
     	margin: 10px 0;
   	}
+  	div.wrapper {
+  		padding-top: 60px;
+  	}
 }
 /* End Media Query */
 /* END OF ROADMAP SECTION */
@@ -553,7 +567,7 @@ p {
 #tokenomics  h1 {
 	font-size: 60px;
 	text-align: center;
-	padding-top: 10%;
+	padding-top: 7%;
 	padding-bottom: 5%; 
 	color: yellow;
 }
@@ -591,7 +605,10 @@ p {
 	padding-top: 30px;
 	margin: 10px 10px 10px 10px;
 }
-
+.taxtop span {
+	font-weight: bolder;
+	text-shadow: 2px;
+}
 .taxtitle {
 	background: ;
 	border-radius: 20px;
@@ -620,6 +637,7 @@ p {
 @media only screen and (max-width: 971px) {
 	#tokenomics h1 {
 		font-size: 40px;
+		padding-top: 60px;
 	}
 	.tax {
 		margin-top: 20px;
@@ -630,6 +648,9 @@ p {
 	.taxtitle {
 		height: auto;
 		width: auto;
+	}
+	.card {
+		margin-left: 12.5px;
 	}
 	.chartBox {
 	width: 3500px;
@@ -657,7 +678,7 @@ p {
 	font-weight: bold;
 	padding: 30px;
 	margin-bottom: 60px;
-	padding-top: 10%;
+	padding-top: 5.5%;
 	text-align: center;
 	color: black;
 }
@@ -748,6 +769,12 @@ p {
 }
 #team .tglink:hover img {
 	filter: grayscale(0);
+}
+
+@media only screen and (max-width: 680px) {
+	#team .wrappers h1 {
+	padding-top: 17%;
+}
 }
 /* END OF TEAM SECTION */
 
