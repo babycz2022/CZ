@@ -650,7 +650,9 @@ p {
 		width: auto;
 	}
 	.card {
-		margin-left: 12.5px;
+		width: auto;
+		margin: 10px 10px 10px 0px;
+		padding: 30px 5px 5px 5px;
 	}
 	.chartBox {
 	width: 3500px;
@@ -658,7 +660,6 @@ p {
 	padding: 1px 1px 1px 1px;
 	border-radius: 20px;
 	background: whitesmoke;
-	margin-right:5px;
 	}
 }
 /* END OF TOKENOMICS SECTION */
