@@ -9,6 +9,9 @@
   <title>BabyCZ! </title>
 </head>
 <body>
+
+
+
   <!-- Header -->
   <section id="header">
     <div class="header container">
@@ -39,10 +42,10 @@
   <section id="home">
     <div class="home container">
       <div>
-        <h1>First deflationary charity and community<span></span></h1>
-        <h1>driven meme token riding <span></span></h1>
+        <h1><span></span></h1>
+        <h1> <span></span></h1>
         <h1>"CZ" brand <span></span></h1>
-        <a href="https://t.me/babycztoken" type="button" class="cta" target="_blank">Telegram</a>
+        <a href="https://t.me/babyczcommunity" type="button" class="cta" target="_blank">Telegram</a>
       </div>
     </div>
   </section>
@@ -58,14 +61,14 @@
       </div>
       <div class="col-right">
         <h1 class="section-title"><br>About BabyCZ</h1>
-        <p>BabyCz is a charity oriented meme token born in honour of Binance CEO Changpeng Zhao (CZ) for his works and contribution towards blockchain and societal development. </p> 
+        <p>BabyCz is a charity oriented meme token born in honour of Binance CEO Changpeng Zhao (CZ) for his works and contribution towards blockchain and societal development. </p>
       </div>
     </div>
     <div class="about-2">
       <div class="why-buy">
         <h2 class="bigfont">Why Buy BabyCz? </h2>
         <p>✔Safu and experienced Dev</p>
-        <p>✔ Stake to earn at launch</p>
+        <p>✔ Staking to earn at launch</p>
         <p>✔ Unique and exclusive NFTs</p>
         <p>✔ Smart Charity</p>
       </div>
@@ -73,9 +76,9 @@
     <div class="about-3">
       <div class="highlights">
         <h2 class="bigfont">Some Highlights of BabyCz </h2>
-        <p>Safu and experienced team </p> 
-  <p>Smart charity to attract investment and brand adoption </p> 
-  <p>BabyCz Unique NFTs mint holding requirements </p> 
+        <p>Safu and experienced team </p>
+  <p>Smart charity to attract investment and brand adoption </p>
+  <p>BabyCz Unique NFTs mint holding requirements </p>
   <p>Staking pool to incenticize holding and reward diamond hands </p>
       </div>
     </div>
@@ -169,56 +172,58 @@
       <div class="chartBox">
         <canvas id="myChart"></canvas>
       </div>
-      
+
       <div class="tax">
         <div class="taxtop"><span style="color: lime;">Buy</span> and <span style="color: red;">Sell</span> Tax</div>
 
         <div class="taxtitle">
           <div class="card" style="background: lime;">
           <h2>Marketing</h2>
-          <p><br>3%</p>  
+          <p><br>3%</p>
       </div>
       <div class="card" style="background: lime;">
           <h2>Development</h2>
-          <p><br>2%</p>  
+          <p><br>2%</p>
       </div>
         </div>
-		
-		<div class="taxtitle">  
+
+		<div class="taxtitle">
       <div class="card">
           <h2>Buyback  </h2>
           <p><br>2%</p>
       </div>
       <div class="card">
           <h2>Marketing </h2>
-          <p><br>3% </p>  
+          <p><br>3% </p>
       </div>
       <div class="card">
           <h2>Development </h2>
-          <p><br>2% </p>  
+          <p><br>2% </p>
       </div>
         </div>
 
-      </div> 
-    </div> 
+      </div>
+    </div>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
-    // setup 
+    // setup
     const data = {
       labels: ['8% Staking', '9% Marketing', '7.2% Private', '24% Presale', '14.4% Liquidity', '10% Cex', '10% Team', '17.4% Others'],
       datasets: [{
         label: 'Weekly Sales',
-        data: [8, 9, 7.2, 24, 14.4, 10, 10, 17.4],
+        data: [ 8, 9, 7.2, 24, 14.4, 10, 10, 17.4],
         backgroundColor: [
+          'rgb(240, 182, 10)',
+          'rgb(245, 88, 10)',
           'rgb(247, 230, 45)',
           'rgb(21, 191, 92)',
           'rgb(240, 34, 75)',
           'rgb(247, 214, 27)',
           'rgb(82, 76, 47)',
           'rgb(31, 24, 153 )',
-          'rgb(12, 237, 42)'
         ],
         borderColor: [
+          'rgba(240, 182, 10, 1)',
           'rgba(245, 88, 10, 1)',
           'rgba(247, 230, 45, 1)',
           'rgba(21, 191, 92, 1)',
@@ -226,7 +231,6 @@
           'rgba(247, 214, 27, 1)',
           'rgba(82, 76, 47, 1)',
           'rgba(31, 24, 153, 1)',
-          'rgba(12, 237, 42, 1)'
         ],
         borderWidth: 1,
         cutout: '90%',
@@ -239,8 +243,8 @@
       id: 'doughnutLabelsLine',
       afterDraw(chart, args, options) {
         const {ctx, chartArea: {top, bottom, left, right, width, height} } = chart;
-      
-        
+
+
         chart.data.datasets.forEach((dataset, i) => {
           chart.getDatasetMeta(i).data.forEach((datapoint, index) => {
             //console.log(chart.data.labels)
@@ -284,7 +288,7 @@
       }
     }
 
-    // config 
+    // config
     const config = {
       type: 'doughnut',
       data,
@@ -297,7 +301,7 @@
           legend: {
             display: true
           },
-	title: {
+          title: {
         display: true,
         text: 'Total supply 20 Billion'
       }
@@ -386,10 +390,10 @@
           <a href="#home"><img src="img/website-logo.png" /></a>
         </div>
         <div class="social-item">
-          <a href="https://t.me/babycztoken" target="_blank"><img src="img/tg-logo.png" /></a>
+          <a href="https://t.me/babyczcommunity" target="_blank"><img src="img/tg-logo.png" /></a>
         </div>
         <div class="social-item">
-          <a href="https://twitter.com/babycztoken" target="_blank"><img src="img/twt-logo.png" /></a>
+          <a href="https://twitter.com/BabyCzEn" target="_blank"><img src="img/twt-logo.png" /></a>
         </div>
       </div>
       <p>All rights reserved 2022!</p>
@@ -397,7 +401,7 @@
   </section>
   <!-- End Footer -->
   <script src="./app.js"></script>
- <script>  
+ <script>
     if (history.scrollRestoration) {
     history.scrollRestoration = 'manual';
     } else {
