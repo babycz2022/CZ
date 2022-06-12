@@ -650,9 +650,9 @@ p {
 		width: auto;
 	}
 	.card {
-		width: auto;
-		margin: 10px 10px 10px 0px;
-		padding: 30px 5px 5px 5px;
+	      width: auto;
+	      margin: 10px 5px 5px -5px;
+	      padding: 30px 5px 5px 5px;
 	}
 	.chartBox {
 	width: 3500px;
