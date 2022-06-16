@@ -30,7 +30,7 @@ img {
 }
 a,img {
 	cursor: url(cz.cur), auto !important;
-} 
+}
 p {
 	color: black;
 	font-size: 1.4rem;
@@ -266,6 +266,12 @@ p {
 #home h1:nth-child(3) span {
 	animation-delay: 2.5s;
 }
+@media(max-width: 460px){
+	#home a:nth-last-child(1) {
+		padding: 10px 77px;
+	}
+}
+
 /* END OF HOME SECTION */
 
 
@@ -413,8 +419,8 @@ p {
 	}
 	#about .col-right p {
 		padding-left: 20px;
-	}	
-		
+	}
+
 
 
 }
@@ -568,7 +574,7 @@ p {
 	font-size: 60px;
 	text-align: center;
 	padding-top: 7%;
-	padding-bottom: 5%; 
+	padding-bottom: 5%;
 	color: yellow;
 }
 .chartCard {
@@ -578,7 +584,7 @@ p {
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
-	padding-bottom: 1%; 
+	padding-bottom: 1%;
 	}
 .chartBox {
 	width: 700px;
@@ -586,7 +592,7 @@ p {
 	padding: 1px 1px 1px 1px;
 	border-radius: 20px;
 	background: whitesmoke;
-	}	
+	}
 .tax {
 	background:  #36454F;
 	border-radius: 20px;
@@ -694,7 +700,7 @@ p {
 	background-color: #393E46;
 	margin: 5px;
 	margin-bottom: 50px;
-	width: 300px; 
+	width: 300px;
 	padding: 20px;
 	line-height: 20px;
 	color: yellow;
@@ -743,7 +749,7 @@ p {
 	margin-left: 100px;
 }
 #team .team-member .team-img img {
-	width: 150px; 
+	width: 150px;
 	height: 150px;
 	padding: 10px;
 	border-radius: 100px;
