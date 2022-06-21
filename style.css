@@ -609,7 +609,6 @@ p {
 	width: 700px;
 	margin-top: 20px;
 }
-
 .taxtop {
 	background: #f0f0f0;
 	font-size: 35px;
@@ -632,7 +631,6 @@ p {
 	margin: 10px 0px 10px 10px;
 	height: 500px;
 }
-
 .card {
 	width: 315px;
 	padding-top: 45px;
@@ -643,10 +641,64 @@ p {
 	border-radius: 20px;
 	font-weight: bold;
 	background: red;
+	opacity: 0;
 }
 .card p {
 	font-size: 30px;
 	font-weight: bold;
+}
+.green-card-uno {
+	animation-name: bounce;
+	animation-duration: 0.7s;
+	animation-fill-mode: both;
+}
+.green-card-dos {
+	animation-name: bounce;
+	animation-duration: 0.7s;
+	animation-delay: 200ms;
+	animation-fill-mode: both;
+}
+.red-card-uno {
+	animation-name: bounce;
+	animation-duration: 0.7s;
+	animation-delay: 100ms;
+	animation-fill-mode: both;
+}
+.red-card-dos {
+	animation-name: bounce;
+	animation-duration: 0.7s;
+	animation-delay: 300ms;
+	animation-fill-mode: both;
+}
+.red-card-tres {
+	animation-name: bounce;
+	animation-duration: 0.7s;
+	animation-delay: 400ms;
+	animation-fill-mode: both;
+}
+
+@keyframes bounce {
+0% {
+    opacity: 0;
+    transform: scale3d(0.3,0.3,0.3);
+}
+20% {
+    transform: scale3d(1.1,1.1,1.1);
+}
+40% {
+    transform: scale3d(0.9,0.9,0.9);
+}
+60% {
+    opacity: 1;
+    transform: scale3d(1.03,1.03,1.03);
+}
+80% {
+    transform: scale3d(0.97,0.97,0.97);
+}
+100% {
+    opacity: 1;
+    transform: scale3d(1,1,1);
+}
 }
 
 @media only screen and (max-width: 971px) {
@@ -693,7 +745,7 @@ p {
 	font-size: 60px;
 	font-weight: bold;
 	padding: 30px;
-	margin-bottom: 60px;
+	margin-bottom: 45px;
 	padding-top: 5.5%;
 	text-align: center;
 	color: black;
@@ -714,6 +766,7 @@ p {
 	line-height: 20px;
 	color: yellow;
 	position: relative;
+	opacity: 0;
 }
 #team .team-member:hover {
 	background: black;
@@ -785,6 +838,39 @@ p {
 }
 #team .tglink:hover img {
 	filter: grayscale(0);
+}
+.rise-animation1 {
+	animation-name: slideUp;
+	animation-duration: 0.7s;
+	animation-fill-mode: both;
+}
+.rise-animation2 {
+	animation-name: slideUp;
+	animation-duration: 0.7s;
+	animation-delay: 200ms;
+	animation-fill-mode: both;
+}
+.rise-animation3 {
+	animation-name: slideUp;
+	animation-duration: 0.7s;
+	animation-delay: 400ms;
+	animation-fill-mode: both;
+}
+.rise-animation4 {
+	animation-name: slideUp;
+	animation-duration: 0.7s;
+	animation-delay: 600ms;
+	animation-fill-mode: both;
+}
+@keyframes slideUp {
+0% {
+    opacity: 0;
+    transform: translate3d(0,50%,0);
+}
+100% {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
 }
 
 @media only screen and (max-width: 680px) {
