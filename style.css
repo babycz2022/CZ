@@ -53,6 +53,7 @@ p {
 }
 .cta {
 	display: inline-block;
+	overflow: hidden;
 	padding: 10px 30px;
 	color: white;
 	background-color: transparent;
@@ -266,12 +267,20 @@ p {
 #home h1:nth-child(3) span {
 	animation-delay: 2.5s;
 }
-@media(max-width: 460px){
+#home img {
+	width: 50px;
+	height: 50px;
+	margin-top: -16px;
+	margin-bottom: -18px;
+	margin-left: 10px;
+	margin-right: -25px;
+	border-radius: 100%;
+}
+@media(max-width: 500px){
 	#home a:nth-last-child(1) {
-		padding: 10px 77px;
+		padding: 10px 56.5px;
 	}
 }
-
 /* END OF HOME SECTION */
 
 
@@ -875,6 +884,16 @@ p {
 	#home h1 {
 		font-size: 7rem;
 	}
+	#home img {
+		width: 80px;
+		height: 80px;
+		margin-top: -26px;
+		margin-bottom: -30px;
+		margin-left: 20px;
+		margin-right: -35px;
+		border-radius: 100%;
+	}
+
 	/* End Home */
 
 	/* About */
