@@ -334,6 +334,7 @@ p {
 	width: 98%;
 	border: 7px solid yellow;
 	z-index: -1;
+	opacity: 0;
 }
 #about .about-2 {
 	margin: 5%;
@@ -360,7 +361,6 @@ p {
 	margin-bottom: 45px;
 	text-align: left;
 	line-height: 1px;
-
 }
 #about .about-3 {
 	display: flex;
@@ -380,8 +380,78 @@ p {
 	font-weight: bold;
 	font-size: 25px;
 	padding-bottom: 5px;
-
 }
+.about-img, .col-right, .about-2, .about-3  {
+	opacity: 0;
+}
+.about-img-animation.active {
+		animation: slide 1.25s, fade 2.25s;
+    animation-delay: 300ms;
+    position: relative;
+    animation-fill-mode: both;
+}
+.col-right-animation.active {
+	animation: slideUp 1.25s, fade 2.25s;
+	animation-delay: 300ms;
+	position: relative;
+	animation-fill-mode: both;
+}
+.about-2-animation.active {
+	animation: slideFarLeft 1.25s, fade 2.25s;
+	animation-delay: 300ms;
+	position: relative;
+	animation-fill-mode: both;
+}
+.about-3-animation.active {
+	animation: slideFarRight 1.25s, fade 2.25s;
+	animation-delay: 300ms;
+	position: relative;
+	animation-fill-mode: both;
+}
+
+@keyframes fade {
+0% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+}
+}
+
+@keyframes slide {
+0% {
+    opacity: 0;
+    transform: translate3d(-100%,0,0);
+}
+100% {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+}
+
+@keyframes slideFarLeft {
+0% {
+    opacity: 0;
+    transform: translate3d(100%,0,0);
+}
+100% {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+}
+
+@keyframes slideFarRight {
+0% {
+    opacity: 0;
+    transform: translate3d(-100%,0,0);
+}
+100% {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+}
+
+
 @media only screen and (max-width: 680px) {
 	#about .about-2 {
 		display: block;
@@ -429,9 +499,6 @@ p {
 	#about .col-right p {
 		padding-left: 20px;
 	}
-
-
-
 }
 /* END OF ABOUT SECTION */
 
@@ -647,30 +714,30 @@ p {
 	font-size: 30px;
 	font-weight: bold;
 }
-.green-card-uno {
+.green-card-uno.active {
 	animation-name: bounce;
 	animation-duration: 0.7s;
 	animation-fill-mode: both;
 }
-.green-card-dos {
+.green-card-dos.active {
 	animation-name: bounce;
 	animation-duration: 0.7s;
 	animation-delay: 200ms;
 	animation-fill-mode: both;
 }
-.red-card-uno {
+.red-card-uno.active {
 	animation-name: bounce;
 	animation-duration: 0.7s;
 	animation-delay: 100ms;
 	animation-fill-mode: both;
 }
-.red-card-dos {
+.red-card-dos.active {
 	animation-name: bounce;
 	animation-duration: 0.7s;
 	animation-delay: 300ms;
 	animation-fill-mode: both;
 }
-.red-card-tres {
+.red-card-tres.active {
 	animation-name: bounce;
 	animation-duration: 0.7s;
 	animation-delay: 400ms;
@@ -839,24 +906,24 @@ p {
 #team .tglink:hover img {
 	filter: grayscale(0);
 }
-.rise-animation1 {
+.rise-animation1.active {
 	animation-name: slideUp;
 	animation-duration: 0.7s;
 	animation-fill-mode: both;
 }
-.rise-animation2 {
+.rise-animation2.active {
 	animation-name: slideUp;
 	animation-duration: 0.7s;
 	animation-delay: 200ms;
 	animation-fill-mode: both;
 }
-.rise-animation3 {
+.rise-animation3.active {
 	animation-name: slideUp;
 	animation-duration: 0.7s;
 	animation-delay: 400ms;
 	animation-fill-mode: both;
 }
-.rise-animation4 {
+.rise-animation4.active {
 	animation-name: slideUp;
 	animation-duration: 0.7s;
 	animation-delay: 600ms;
