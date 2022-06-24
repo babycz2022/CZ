@@ -508,6 +508,15 @@ p {
 	background-color: #393E46;
 	padding-bottom: 5%;
 }
+#roadmap section.box {
+	opacity: 0;
+}
+#roadmap section.box-animation.active {
+	animation: fade 2.25s;
+	animation-delay: 300ms;
+	position: relative;
+	animation-fill-mode: both;
+}
 .wrapper h1 {
 	color: yellow;
 	font-size: 50px;
@@ -558,6 +567,7 @@ p {
 	top: 28px;
 	z-index: -1;
 	transform: rotate(45deg);
+	opacity: 0;
 }
 .row-1 section::before {
 	right: -7px;

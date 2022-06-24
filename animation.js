@@ -29,13 +29,19 @@ function addObserver(el, options){
     }, options)
     observer.observe(el)
 }
+
 //About Section animation
 scrollTrigger('.about-img')
 scrollTrigger('.col-right')
 scrollTrigger('.about-2')
 scrollTrigger('.about-3')
+
+//Roadmap Section animation
+scrollTrigger('.box')
+
 //Tokenomics Card animation
 scrollTrigger('.card')
+
 //Team Section Members animation
 scrollTrigger('.team-member')
 
