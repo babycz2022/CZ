@@ -499,6 +499,18 @@ p {
 	#about .col-right p {
 		padding-left: 20px;
 	}
+	.about-2-animation.active {
+		animation: slideUp 1.25s, fade 2.25s;
+		animation-delay: 300ms;
+		position: relative;
+		animation-fill-mode: both;
+	}
+	.about-3-animation.active {
+		animation: slideUp 1.25s, fade 2.25s;
+		animation-delay: 300ms;
+		position: relative;
+		animation-fill-mode: both;
+	}
 }
 /* END OF ABOUT SECTION */
 
